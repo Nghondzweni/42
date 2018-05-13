@@ -5,9 +5,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <stddef.h>
 
 size_t ft_strlen(const char *str);
+char	*ft_strchr(const char *s, int c);
 
 void ft_putchar(char c){
 	write(1, &c, 1);
@@ -40,52 +40,6 @@ void	ft_putnbr(int n)
 			ft_putnbr(n / 10);
 		ft_putchar((n % 10) + '0');
 	}
-}
-
-void ft_div_mod(int a, int b, int *div, int *mod){
-	*div = a/b;
-	*mod = a%b;	
-}
-
-void	ft_ultimate_div_mod(int *a, int *b){
-	int tmpa;
-
-	tmpa = 0;
-
-
-	tmpa = *a;
-
-	*a = *a / *b;
-	*b = tmpa % *b;
-}
-
-void	ft_ft(int *nbr)
-{
-	*nbr = 42;
-}
-
-char	*ft_strrev(char *str)
-{
-	char	k;
-	int		i;
-	int		j;
-
-	i = 0;
-	j = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	i -= 1;
-	while (j < i)
-	{
-		k = str[j];
-		str[j] = str[i];
-		str[i] = k;
-		i--;
-		j++;
-	}
-	return (str);
 }
 
 int	ft_atoi(char *str)

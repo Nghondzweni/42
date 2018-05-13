@@ -1,17 +1,18 @@
 #include <string.h>
 
-char *ft_strchr(const char *s, int c)
-{
-	int	i;
+void	ft_putchar(char c);
 
-	i = 0;
-	while(s[i] != '\0')
+char	*ft_strchr(const char *s, int c)
+{
+	char	*tmp;
+
+	tmp = (char*)s;
+	if (s)
 	{
-		if(s[i] == c)
-		{
-			return(s[i]);	
-		}
-		i++;
+		while (*tmp != c && *tmp)
+			tmp++;
+		if (*tmp != c)
+			return (NULL);
 	}
-	return(0);
+	return (tmp);
 }
