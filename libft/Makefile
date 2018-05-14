@@ -13,11 +13,12 @@ SRCS = srcs/ft_strlen.c\
 
 DEPS =	includes/libft.h
 
-OBJS = $(%.c=%.o)
+OBJS = $(%.c : %.o)
 
 all:
-	$(CC) $(CFLAGS) $(SRCS) $(DEPS) main.c
-	ar rc $(NAME)
+	$(CC) -c $(OBJS) $(SRCS) $(DEPS) main.c
+	ar rc $(NAME) *.o
+	$(CC) $(CFLAGS) *.o -o prog
 clean:
 	rm -f *.o
 fclean:	clean

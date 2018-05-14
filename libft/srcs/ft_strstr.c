@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/14 14:12:33 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/14 18:03:52 by tnghondz         ###   ########.fr       */
+/*   Created: 2018/05/14 14:04:30 by tnghondz          #+#    #+#             */
+/*   Updated: 2018/05/14 18:28:27 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	ft_putchar(char c);
-
-
-char	*ft_strchr(const char *s, int c)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
-	while(*s)
-	{
-		if(*s == (char)c)
-		{
-			return((char *)s);
-		}
-			s++;
-	}
-	return(NULL);
+	int		x;
+	int		y;
+
+	while(
+
 }

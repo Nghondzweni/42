@@ -1,4 +1,5 @@
 #include "includes/libft.h"
+#include <stdio.h>
 
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s);
@@ -14,15 +15,15 @@ char	*ft_strchr(const char *s, int c);
 
 int	main(void){
 
-	char str[] = "Hello";
-	char str2[] = "He";
+	/*char str[] = "HHHHH";
+	char str2[] = "hhhhh";
 	char str3[] = "Always";
 	char str4[] = "Here";
 	char str5[] = "Richmond";
-	char str6[] = "Coffee";
+	char str6[] = "Coffee";*/
 	char str7[] = "Tsundzukani";
 
-	ft_putnbr(ft_strlen(str));
+	/*ft_putnbr(ft_strlen(str));
 	ft_putchar('\n');
 	ft_putstr(ft_strdup(str));
 	ft_putchar('\n');
@@ -36,8 +37,8 @@ int	main(void){
 	ft_putchar('\n');
 	ft_putnbr(ft_strcmp(str, str2));
 	ft_putchar('\n');
-	ft_putnbr(ft_strncmp(str, str2, 4));
-	ft_putchar('\n');
+	ft_putnbr(ft_strncmp(str, str2, 100));
+	ft_putchar('\n');*/
 	ft_putstr(ft_strchr(str7,'b'));
 	ft_putchar('\n');
 }
