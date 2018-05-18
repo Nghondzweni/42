@@ -1,7 +1,17 @@
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/18 16:22:46 by tnghondz          #+#    #+#             */
+/*   Updated: 2018/05/18 16:24:16 by tnghondz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-size_t	strlen(const char *s);
-void	ft_putnbr(int n);
+#include "../includes/libft.h"
+
 char	*ft_strcat(char *dest, const char *src)
 {
 	int	i;

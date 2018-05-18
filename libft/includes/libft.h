@@ -6,8 +6,16 @@
 #include <string.h>
 #include <stdlib.h>
 
-size_t ft_strlen(const char *str);
+size_t	ft_strlen(const char *s);
+char	*ft_strdup(const char *s);
+char	*ft_strcpy(char *dest, const char *src);
+char	*ft_strncpy(char *dest, const char *src, size_t n);
+char	*ft_strcat(char *dest, const char *src);
+char	*ft_strncat(char *dest, const char *src, size_t n);
+int	ft_strcmp(const char *s1, const char *s2);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strstr(const char *haystack, const char *needle);
 
 void ft_putchar(char c){
 	write(1, &c, 1);
@@ -41,34 +49,4 @@ void	ft_putnbr(int n)
 		ft_putchar((n % 10) + '0');
 	}
 }
-
-int	ft_atoi(char *str)
-{
-	int i;
-	int nbr;
-	int ngv;
-
-	i = 0;
-	nbr = 0;
-	ngv = 0;
-	if (str[i] == '-')
-	{
-		ngv = 1;
-		i++;
-	}
-	while (str[i] != '\0')
-	{
-		nbr *= 10;
-		nbr += str[i] - '0';
-		i++;
-	}
-	if (ngv == 1)
-	{
-		return (-nbr);
-	}
-	else
-		return (nbr);
-}
-
-
 #endif

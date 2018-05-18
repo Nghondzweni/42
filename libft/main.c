@@ -1,16 +1,4 @@
 #include "includes/libft.h"
-#include <stdio.h>
-
-size_t	ft_strlen(const char *s);
-char	*ft_strdup(const char *s);
-char	*ft_strcpy(char *dest, const char *src);
-char	*ft_strncpy(char *dest, const char *src, size_t n);
-char	*ft_strcat(char *dest, const char *src);
-char	*ft_strncat(char *dest, const char *src, size_t n);
-int	ft_strcmp(const char *s1, const char *s2);
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
-char	*ft_strchr(const char *s, int c);
-
 
 
 int	main(void){
@@ -20,8 +8,10 @@ int	main(void){
 	char str3[] = "Always";
 	char str4[] = "Here";
 	char str5[] = "Richmond";
-	char str6[] = "Coffee";*/
-	char str7[] = "Tsundzukani";
+	char str6[] = "Coffee";
+	const char str7[] = "Tsundzukani";*/
+	const char haystack[] = "Hello, my name is Tsundzukani.";
+	const char needle[] = "b"; 
 
 	/*ft_putnbr(ft_strlen(str));
 	ft_putchar('\n');
@@ -38,7 +28,8 @@ int	main(void){
 	ft_putnbr(ft_strcmp(str, str2));
 	ft_putchar('\n');
 	ft_putnbr(ft_strncmp(str, str2, 100));
-	ft_putchar('\n');*/
-	ft_putstr(ft_strchr(str7,'b'));
 	ft_putchar('\n');
+	ft_putstr(ft_strchr(str7,'k'));
+	ft_putchar('\n');*/
+	ft_putstr(ft_strstr(haystack, needle));
 }

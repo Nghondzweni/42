@@ -10,17 +10,20 @@ SRCS = srcs/ft_strlen.c\
 	srcs/ft_strcmp.c\
 	srcs/ft_strncmp.c\
 	srcs/ft_strchr.c\
+	srcs/ft_strstr.c\
 
-DEPS =	includes/libft.h
+DEPS = -I includes/libft.h
 
-OBJS = $(%.c : %.o)
+OBJS = $(SRCS:.c=.o)
 
-all:
-	$(CC) -c $(OBJS) $(SRCS) $(DEPS) main.c
-	ar rc $(NAME) *.o
-	$(CC) $(CFLAGS) *.o -o prog
+LIB  = ar rc
+
+all: $(NAME)
+
+	$(CC) $(CFLAGS) $(SRCS) main.c $(DEPS)
+	$(LIB)  $(NAME)
 clean:
-	rm -f *.o
+	rm -f $(OBJS)
 fclean:	clean
 	rm -f $(NAME)
 re:	fclean all
