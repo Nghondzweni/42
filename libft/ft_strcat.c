@@ -17,7 +17,7 @@ char	*ft_strcat(char *dest, const char *src)
 	int	i;
 	int	x;
 	
-	i = strlen(dest+1);
+	i = ft_strlen(dest+1);
 	x = 0;
 	i++;
 

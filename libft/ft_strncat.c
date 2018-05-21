@@ -6,7 +6,7 @@ char	*ft_strncat(char *dest, const char *src, size_t n)
 	size_t	x;
 
 	x = 0;
-	i = strlen(dest +1);
+	i = ft_strlen(dest +1);
 	i++;
 	while(src[x] != '\0'  &&  x < n)
 	{
