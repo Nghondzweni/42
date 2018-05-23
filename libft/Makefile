@@ -38,7 +38,7 @@ all:
 	$(CC) $(CFLAGS) $(SRCS) main.c
 	$(LIB) $(NAME)
 clean:
-	rm -f $(OBJS) ./resources/test
+	rm -f $(OBJS)
 fclean:	clean
 	rm -f $(NAME)
 re:	fclean all
