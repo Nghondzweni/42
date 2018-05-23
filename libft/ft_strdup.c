@@ -3,7 +3,7 @@
 char	*ft_strdup(const char *s)
 {
 	char *new;
-	int i;
+	size_t i;
 
 	i = 0;
 

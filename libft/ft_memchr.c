@@ -6,11 +6,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	*ptr;
 	unsigned char	*cptr;
 
-	ptr = (unsigned char *)s;
+	sptr = (unsigned char *)s;
 	cptr = (unsigned char *)c;
 	while(i < n)
 	{
-		if(cptr == ptr[i])
+		if(cptr == sptr[i])
 		{
 			return(s + i);
 		}

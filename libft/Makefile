@@ -16,7 +16,6 @@ SRCS = ft_strlen.c\
 	ft_putnbr.c\
 	ft_strnstr.c\
 	ft_strrchr.c\
-	ft_atoi.c\
 	ft_isalpha.c\
 	ft_isascii.c\
 	ft_isdigit.c\
@@ -26,18 +25,20 @@ SRCS = ft_strlen.c\
 	ft_tolower.c\
 	ft_isupper.c\
 	ft_islower.c\
+	ft_atoi.c\
+	ft_memset.c\
 
 
 OBJS = $(SRCS:.c=.o)
 
 LIB  = ar rc
 
-all: $(NAME)
+all:
 
 	$(CC) $(CFLAGS) $(SRCS) main.c
-	$(LIB) *.o $(NAME)
+	$(LIB) $(NAME)
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) ./resources/test
 fclean:	clean
 	rm -f $(NAME)
 re:	fclean all
