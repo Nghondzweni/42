@@ -1,13 +1,22 @@
 #include "libft.h"
 
-int	ft_strequ(char const *s1, char const *s2)
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	if(s1 && s2)
+	char	*newstr;
+	int	i;
+
+	i = 0;
+	newstr = ft_strnew(len - start);
+	if(newstr == NULL)
 	{
-		if(ft_strcmp(s1, s2))
-		{
-			return(0);
-		}
-		return(1);
+		return(NULL);
 	}
+	while(s[start] && start < len)
+	{
+		newstr = s[start];
+		start++;
+		i++;
+	}
+	newstr[i] = '\0';
+	return(newstr);
 }
