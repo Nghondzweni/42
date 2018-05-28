@@ -1,5 +1,5 @@
 NAME	= libft.a
-CFLAGS	= -Wall -Wextra -Werror
+#CFLAGS	= -Wall -Wextra -Werror#
 CC = gcc
 SRCS = ft_strlen.c\
 	ft_strdup.c\
@@ -28,6 +28,7 @@ SRCS = ft_strlen.c\
 	ft_atoi.c\
 	ft_memset.c\
 	ft_strlcat.c\
+	ft_strsplit.c
 
 
 OBJS = $(SRCS:.c=.o)
@@ -36,7 +37,7 @@ LIB  = ar rc
 
 all:
 
-	$(CC) $(CFLAGS) $(SRCS) main.c
+	$(CC)  $(SRCS) main.c
 	$(LIB) $(NAME)
 clean:
 	rm -f $(OBJS)

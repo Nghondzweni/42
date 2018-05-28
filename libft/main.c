@@ -15,8 +15,11 @@ int	main(void){
 	const char haystack2[] = "Hello my name is Tsundzu";
 	const char needle2[] = "name";
 	const char strrchr[] = "Hello, my name is Tsundzu";*/
-	char	strlcat[] = "Tsundzukani";
-	char	strlcat2[] = "Hello";
+	//char	strlcat[] = "Tsundzukani";
+	//char	strlcat2[] = "Hello";
+	const char	str[] = "**Hello*my*name***is**Tsundzukani*";
+
+
 
 
 	//ft_putnbr(ft_strlen(str));
@@ -41,5 +44,7 @@ int	main(void){
 	//ft_putstr(ft_strnstr(haystack2, needle2, 50));
 	//ft_putstr(ft_strrchr(strrchr, 'b'));
 	//ft_putstr(ft_memset(str, 'A', 2));*/
-	ft_putnbr(ft_strlcat(strlcat2, strlcat, 7));
+	//ft_putnbr(ft_strlcat(strlcat2, strlcat, 7));i
+	ft_putnbr(ft_getwords(str,42));
 }
+
