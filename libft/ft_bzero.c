@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 22:15:04 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/29 03:02:55 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/05/29 04:34:03 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t 	i;
+	size_t	i;
 	char	*str;
 
 	i = 0;

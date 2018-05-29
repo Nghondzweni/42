@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 22:49:41 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/29 04:00:31 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/05/29 04:36:21 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ int	ft_strequ(char const *s1, char const *s2)
 		}
 		return (1);
 	}
-	return(0);
+	return (0);
 }

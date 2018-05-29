@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 22:00:16 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/29 03:23:36 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/05/29 04:31:09 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t		i;
 	const char	*str1;
 	const char	*str2;
 
