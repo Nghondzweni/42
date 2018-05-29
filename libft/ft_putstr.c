@@ -6,18 +6,18 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/18 17:26:36 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/18 17:31:05 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/05/29 02:41:49 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr(char const *str)
 {
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		write(1, &str[i], 1);
 		i++;

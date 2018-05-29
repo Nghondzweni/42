@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/28 22:05:32 by tnghondz          #+#    #+#             */
+/*   Updated: 2018/05/28 22:06:48 by tnghondz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-	if(ft_isalpha(c) != 0 || ft_isdigit(c) != 0)
+	if (ft_isalpha(c) != 0 || ft_isdigit(c) != 0)
 	{
-		return(42);
+		return (42);
 	}
-	return(0);
+	return (0);
 }

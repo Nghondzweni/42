@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/28 22:15:59 by tnghondz          #+#    #+#             */
+/*   Updated: 2018/05/28 22:16:42 by tnghondz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-	if(ft_isupper(c) != 0 || ft_islower(c) != 0)
+	if (ft_isupper(c) != 0 || ft_islower(c) != 0)
 	{
-		return(42);
+		return (42);
 	}
-	return(0);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/18 16:22:46 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/18 16:24:16 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/05/29 02:16:07 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,15 @@ char	*ft_strcat(char *dest, const char *src)
 {
 	int	i;
 	int	x;
-	
-	i = ft_strlen(dest+1);
+
+	i = ft_strlen(dest + 1);
 	x = 0;
 	i++;
-
-	while(src[x] != '\0')
+	while (src[x] != '\0')
 	{
 		dest[i] = src[x];
 		i++;
 		x++;
 	}
-	dest[i] = '\0';
-	return(dest);
+	return (dest);
 }
