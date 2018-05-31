@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 22:50:25 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/29 04:08:43 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/05/30 21:55:02 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 void	ft_striter(char *str, void (*f) (char*))
 {
-	if (str && f)
+	if (!str || !f)
+		return ;
+	while (*str)
 	{
-		while (str)
-		{
-			f(str);
-			str++;
-		}
+		f(str++);
 	}
 }
