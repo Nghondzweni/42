@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 23:02:22 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/28 23:06:45 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/06/02 16:57:56 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	char	*newstr;
 
 	i = 0;
+	if (!s || !f)
+		return (NULL);
 	newstr = ft_strnew(ft_strlen(s));
 	if (!newstr)
 	{

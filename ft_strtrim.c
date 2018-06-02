@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 23:20:57 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/31 02:01:34 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/06/02 19:35:18 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ char	*ft_strtrim(char const *s)
 	unsigned int	start;
 
 	start = 0;
-	while (s[start] && (s[start] == ' ' || s[start] == '\t' || s[start] == '\n'))
+	if (!s)
+		return (NULL);
+	while (s[start] &&
+				(s[start] == ' ' || s[start] == '\t' || s[start] == '\n'))
 		start++;
 	if (s[start] == '\0')
 		return (ft_strdup(s + start));	

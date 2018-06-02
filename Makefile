@@ -38,6 +38,7 @@ SRCS = ft_memset.c\
 	   ft_strsub.c\
 	   ft_strnew.c\
 	   ft_strequ.c\
+	   ft_strsplit.c\
 	   ft_strjoin.c\
 	   ft_strtrim.c\
 	   ft_strsub.c\
@@ -45,6 +46,7 @@ SRCS = ft_memset.c\
 	   ft_striteri.c\
 	   ft_putnbr.c\
 	   ft_strmap.c\
+	   ft_itoa.c\
 	   ft_strmapi.c\
 	   ft_putchar.c\
 	   ft_putstr.c\
@@ -64,13 +66,13 @@ LIB  = ar rc
 
 RANLIB = ranlib
 
-
 all: $(NAME)
 
 $(NAME): 
 	$(CC) $(CFLAGS) $(SRCS)
 	$(LIB) $(NAME) $(OBJS)
 	$(RANLIB) $(NAME)
+
 clean:
 	rm -f $(OBJS)
 fclean:	clean
