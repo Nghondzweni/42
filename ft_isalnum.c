@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 22:05:32 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/28 22:06:48 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/06/02 20:44:57 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) != 0 || ft_isdigit(c) != 0)
 	{
-		return (42);
+		return (1);
 	}
 	return (0);
 }

@@ -1,6 +1,21 @@
-NAME	= libft.a
-CFLAGS	= -c -Wall -Wextra -Werror
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/02 20:03:01 by tnghondz          #+#    #+#              #
+#    Updated: 2018/06/02 20:05:56 by tnghondz         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = libft.a
+
 CC = gcc
+
+FLAGS = -c -Wextra -Wall -Werror
+
 SRCS = ft_memset.c\
 	   ft_bzero.c\
 	   ft_memcpy.c\
@@ -38,43 +53,43 @@ SRCS = ft_memset.c\
 	   ft_strsub.c\
 	   ft_strnew.c\
 	   ft_strequ.c\
+	   ft_itoa.c\
 	   ft_strsplit.c\
+	   ft_strnequ.c\
 	   ft_strjoin.c\
 	   ft_strtrim.c\
 	   ft_strsub.c\
 	   ft_striter.c\
 	   ft_striteri.c\
 	   ft_putnbr.c\
+	   ft_putnbr_fd.c\
 	   ft_strmap.c\
-	   ft_itoa.c\
 	   ft_strmapi.c\
 	   ft_putchar.c\
-	   ft_putstr.c\
-	   ft_isupper.c\
-	   ft_islower.c\
-	   ft_strnequ.c\
-	   ft_putendl.c\
 	   ft_putchar_fd.c\
+	   ft_putstr.c\
 	   ft_putstr_fd.c\
-	   ft_putendl_fd.c\
-	   ft_putnbr_fd.c\
-	   main.c\
+	   ft_putendl.c\
+	   ft_putendl_fd.c
 
-OBJS = $(SRCS:.c=.o)
 
-LIB  = ar rc
+LIB = ar rc
 
 RANLIB = ranlib
 
+OBJ = $(SRCS:.c=.o)
+
 all: $(NAME)
 
-$(NAME): 
-	$(CC) $(CFLAGS) $(SRCS)
-	$(LIB) $(NAME) $(OBJS)
+$(NAME):
+	$(CC) $(FLAGS) $(SRCS)
+	$(LIB) $(NAME) $(OBJ)
 	$(RANLIB) $(NAME)
 
-clean:
-	rm -f $(OBJS)
-fclean:	clean
+clean: 
+	rm -f $(OBJ)
+
+fclean: clean
 	rm -f $(NAME)
-re:	fclean all
+
+re: fclean all

@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 22:15:59 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/28 22:16:42 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/06/02 20:44:08 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_isalpha(int c)
 {
-	if (ft_isupper(c) != 0 || ft_islower(c) != 0)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
-		return (42);
+		return (1);
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: tnghondz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 23:07:18 by tnghondz          #+#    #+#             */
-/*   Updated: 2018/05/30 02:53:26 by tnghondz         ###   ########.fr       */
+/*   Updated: 2018/06/02 20:52:33 by tnghondz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 		s2++;
 		i++;
 	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	return (0);
 }
