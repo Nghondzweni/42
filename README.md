@@ -1,2 +1,2 @@
 # 42
-42 School Projects
+A recreation of many C stdlib functions, as well as some extras.
